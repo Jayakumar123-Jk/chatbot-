@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+    <pattern>WHAT IS YOUR NAME</pattern>
+    <template>My name is jk!</template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS THE FULLFORM OF IT</pattern>
+    <template>IT - suthadi</template>
+  </category>
+
+  <category>
+    <pattern>* KUMARAGURU *</pattern>
+    <template>Located in Coimbatore and it is a good college</template>
+  </category>
+
+  <category>
+    <pattern>TELL ME WHAT * IS</pattern>
+    <template><srai>WHAT IS <star/></srai></template>
+  </category>
+
+  <category>
+    <pattern>TELL ME MORE</pattern>
+    <template>There is nothing to say</template>
+  </category>
+
+  <category>
+    <pattern>PICK A NUMBER</pattern>
+    <template>
+      <random>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WHERE IS *</pattern>
+    <template>
+      <think><set name="place"><lowercase><star/></lowercase></set></think>
+      <condition name="place">
+        <li value="kumaraguru">Kumaraguru is in Coimbatore</li>
+        <li value="marina">Marina beach is in Chennai</li>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>DAI BALA *</pattern>
+    <template>
+      <think><set name="place"><lowercase><star/></lowercase></set></think>
+      <condition name="place">
+        <li value="snegatharam beach polama">Chiddhukum VP kum sanda da anga vanthu yarrkitta pesa pora athanala ni vena</li>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>CATS</pattern>
+    <template>
+      <think><set name="topic">cats</set></think>
+      Cats are Cute Pets!! They are stress busters!!
+    </template>
+  </category>
+
+  <category>
+    <pattern>TELL ME ABOUT DOGS</pattern>
+    <template>
+      <think><set name="topic">dogs</set></think>
+      Yes, let's discuss about dogs.
+    </template>
+  </category>
+
+  <category><!--college -->
+    <pattern>TELL ME ABOUT COLLEGE</pattern>
+    <template>
+      <think><set name="topic">college</set></think>
+      Let's discuss about it!
+    </template>
+  </category>
+
+  
+  <topic name="cats"><!--catss -->
+    <category>
+      <pattern>TELL ME ABOUT CATS</pattern>
+      <template>
+        Cats are small and fluffy animals loved by many! 😺<br/><br/>
+
+        🔗 Learn more here:<br/>
+        <a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Wikipedia - Cat</a><br/><br/>
+
+        📽️ Watch a cute cat video:<br/>
+        <a href="https://www.youtube.com/watch?v=MUWZpP4T0gA" target="_blank">Funny Cat Video</a><br/><br/>
+
+        🖼️ Here is a picture of a cat:<br/>
+        <a href="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" target="_blank">
+          <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" alt="Cute Cat" width="200"/>
+        </a>
+      </template>
+    </category>
+  </topic>
+
+  
+  <topic name="dogs"><!--dogs -->
+    <category>
+      <pattern>HOW DO THEY LOOK LIKE</pattern>
+      <template>They are big and strong. They guard the streets at night. 🐶</template>
+    </category>
+  </topic>
+
+</aiml>
