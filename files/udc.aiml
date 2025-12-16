@@ -48,15 +48,7 @@
     </template>
   </category>
 
-  <category>
-    <pattern>DAI BALA *</pattern>
-    <template>
-      <think><set name="place"><lowercase><star/></lowercase></set></think>
-      <condition name="place">
-        <li value="snegatharam beach polama">Chiddhukum VP kum sanda da anga vanthu yarrkitta pesa pora athanala ni vena</li>
-      </condition>
-    </template>
-  </category>
+ 
 
   <category>
     <pattern>CATS</pattern>
@@ -112,3 +104,4 @@
   </topic>
 
 </aiml>
+
